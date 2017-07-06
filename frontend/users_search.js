@@ -17,7 +17,7 @@ class UsersSearch {
 
   renderResults (users) {
     this.$ul.empty();
-      users.forEach( (user) => {
+      users.forEach( user => {
         this.$ul.append(`<li><a href="localhost:3000/users/${user.id}"> ${user.username} </a></li>`);
     });
   }
